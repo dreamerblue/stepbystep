@@ -1,0 +1,2657 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/sbs.min.css?v3.0.4" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.dotdotdot.min.js"></script>
+<script src="js/fixed_table_header.min.js?v3.0.4"></script>
+<script src="js/sbs_resize_table.min.js?v3.0.4"></script>
+<script src="js/expanda.min.js?v3.0.4"></script>
+<!--[if IE]>
+<script src="js/html5shiv-printshiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+<script>
+$(function() { $('input, textarea').placeholder(); });
+</script>
+<![endif]-->
+<title>StepByStep</title>
+</head>
+<body>
+<!-- About Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">About</h4>
+			</div>
+			<div class="modal-body">
+			<p><h3><span class="glyphicon glyphicon-send" aria-hidden="true"></span> StepByStep <sup>3.0β</sup></h3>
+			<h6>version 3.0.4</h6>
+			<h6>Copyright © 2016-2017 StepByStep</h6>
+			<h6>Designed by <a href="https://HellobLue.net" target="_blank">bLue</a></h6>
+			<h6><a href="https://github.com/dreamerblue/stepbystep" target="_blank">Open Source Project</a></h6>
+			<p></p><br />
+			<p class="text-center">
+			Have problem? Please contact <a href="mailto:tbdblue@gmail.com" target="_blank">tbdblue@gmail.com</a></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Container -->
+<div class="container-fluid">
+	<div class="row-fluid">
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" 
+					 data-target="#sbs-navbar-collapse">
+						<span class="sr-only">Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="">
+					<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+					StepByStep <sup>3.0 beta</sup></a>
+				</div>
+				<div class="collapse navbar-collapse" id="sbs-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Step<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="step.html">Step 1</a></li>
+							<li><a href="step.html">Step 2</a></li>
+							<li><a href="step.html">Step 3</a></li>
+							<li class="divider"></li>
+							<li><a href="step.html">Step 4</a></li>
+							<li><a href="step.html">Step 5</a></li>
+							<li><a href="step.html">Step 6</a></li>
+						</ul>
+						</li>
+						<li id="status"><a href="status.html">Status</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							More<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="">FAQ</a></li>
+							<li><a data-toggle="modal" data-target="#myModal" href="javascript:void(0)">About</a></li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Nav Bar Blank -->
+		<div class="blank"></div>
+		<!-- Left Table -->
+		<div id="div1" class="main-div" style="width: 360px; overflow: hidden;">
+			<table id="table1" class="table table-bordered" style="table-layout: fixed;">
+				<col style="width:100px" />
+				<col style="width:159px" />
+				<col style="width:100px" />
+				<thead class="vertical-middle">
+					<tr class="step-title">
+						<th colspan="3">Primary Algorithm</th>
+					</tr>
+					<tr class="step-header">
+						<th>Stage</th>
+						<th>Section</th>
+						<th>Problem</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="13">Basic Algorithms</td>
+						<td rowspan="2">Enumeration</td>
+						<td><a href="http://poj.org/problem?id=1753" target="_blank" title="Flip Game">POJ 1753</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2965" target="_blank" title="The Pilots Brothers' refrigerator">POJ 2965</a></td>
+					</tr>
+					<tr>
+						<td rowspan="3">Greedy</td>
+						<td><a href="http://poj.org/problem?id=1328" target="_blank" title="Radar Installation">POJ 1328</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2109" target="_blank" title="Power of Cryptography">POJ 2109</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2586" target="_blank" title="Y2K Accounting Bug">POJ 2586</a></td>
+					</tr>
+					<tr>
+						<td rowspan="1">Divide and Conquer</td>
+						<td><a href="http://poj.org/problem?id=2524" target="_blank" title="Ubiquitous Religions">POJ 2524</a></td>
+					</tr>
+					<tr>
+						<td rowspan="1">Recursion</td>
+						<td><a href="http://poj.org/problem?id=2506" target="_blank" title="Tiling">POJ 2506</a></td>
+					</tr>
+					<tr>
+						<td rowspan="1">Constructive Algorithms</td>
+						<td><a href="http://poj.org/problem?id=3295" target="_blank" title="Tautology">POJ 3295</a></td>
+					</tr>
+					<tr>
+						<td rowspan="5">Simulation</td>
+						<td><a href="http://poj.org/problem?id=1068" target="_blank" title="Parencodings">POJ 1068</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2632" target="_blank" title="Crashing Robots">POJ 2632</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1573" target="_blank" title="Robot Motion">POJ 1573</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2993" target="_blank" title="Emag eht htiw Em Pleh">POJ 2993</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2996" target="_blank" title="Help Me with the Game">POJ 2996</a></td>
+					</tr>
+					<tr>
+						<td rowspan="20">Graph Algorithms</td>
+						<td rowspan="3">DFS and BFS</td>
+						<td><a href="http://poj.org/problem?id=3278" target="_blank" title="Catch That Cow">POJ 3278</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2049" target="_blank" title="Finding Nemo">POJ 2049</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3083" target="_blank" title="Children of the Candy Corn">POJ 3083</a></td>
+					</tr>
+					<tr>
+						<td rowspan="6">Shortest Path Algorithms</td>
+						<td><a href="http://poj.org/problem?id=1860" target="_blank" title="Currency Exchange">POJ 1860</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3259" target="_blank" title="Wormholes">POJ 3259</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1062" target="_blank" title="昂贵的聘礼">POJ 1062</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2253" target="_blank" title="Frogger">POJ 2253</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1125" target="_blank" title="Stockbroker Grapevine">POJ 1125</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2240" target="_blank" title="Arbitrage">POJ 2240</a></td>
+					</tr>
+					<tr>
+						<td rowspan="4">Minimum Spanning Tree</td>
+						<td><a href="http://poj.org/problem?id=1789" target="_blank" title="Truck History">POJ 1789</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2485" target="_blank" title="Highways">POJ 2485</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1258" target="_blank" title="Agri-Net">POJ 1258</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3026" target="_blank" title="Borg Maze">POJ 3026</a></td>
+					</tr>
+					<tr>
+						<td rowspan="3">Topological Sorting</td>
+						<td><a href="http://poj.org/problem?id=1094" target="_blank" title="Sorting It All Out">POJ 1094</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3267" target="_blank" title="The Cow Lexicon">POJ 3267</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3687" target="_blank" title="Labeling Balls">POJ 3687</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Bipartite Graph</td>
+						<td><a href="http://poj.org/problem?id=3041" target="_blank" title="Asteroids">POJ 3041</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3020" target="_blank" title="Antenna Placement">POJ 3020</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Maximum Flow</td>
+						<td><a href="http://poj.org/problem?id=1459" target="_blank" title="Power Network">POJ 1459</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3436" target="_blank" title="ACM Computer Factory">POJ 3436</a></td>
+					</tr>
+					<tr>
+						<td rowspan="17">Data Structure</td>
+						<td rowspan="3">String</td>
+						<td><a href="http://poj.org/problem?id=1035" target="_blank" title="Spell checker">POJ 1035</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3080" target="_blank" title="Blue Jeans">POJ 3080</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1936" target="_blank" title="All in All">POJ 1936</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Sorting Algorithms</td>
+						<td><a href="http://poj.org/problem?id=2388" target="_blank" title="Who's in the Middle">POJ 2388</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2299" target="_blank" title="Ultra-QuickSort">POJ 2299</a></td>
+					</tr>
+					<tr>
+						<td rowspan="1">Union-Find</td>
+						<td><a href="http://poj.org/problem?id=1611" target="_blank" title="The Suspects">POJ 1611</a></td>
+					</tr>
+					<tr>
+						<td rowspan="6">Hashing and Binary Search</td>
+						<td><a href="http://poj.org/problem?id=3349" target="_blank" title="Snowflake
+					Snow
+					Snowflakes">POJ 3349</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3274" target="_blank" title="Gold Balanced Lineup">POJ 3274</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2151" target="_blank" title="Check the difficulty of problems">POJ 2151</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1840" target="_blank" title="Eqs">POJ 1840</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2002" target="_blank" title="Squares">POJ 2002</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2503" target="_blank" title="Babelfish">POJ 2503</a></td>
+					</tr>
+					<tr>
+						<td rowspan="1">Huffman Tree</td>
+						<td><a href="http://poj.org/problem?id=3253" target="_blank" title="Fence Repair">POJ 3253</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Heap and Priority Queue</td>
+						<td><a href="http://poj.org/problem?id=2442" target="_blank" title="Sequence">POJ 2442</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1442" target="_blank" title="Black Box">POJ 1442</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Trie</td>
+						<td><a href="http://poj.org/problem?id=2513" target="_blank" title="Colored Sticks">POJ 2513</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2418" target="_blank" title="Hardwood Species">POJ 2418</a></td>
+					</tr>
+					<tr>
+						<td rowspan="14">Primary Search</td>
+						<td rowspan="5">DFS</td>
+						<td><a href="http://poj.org/problem?id=2488" target="_blank" title="A Knight's Journey">POJ 2488</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3083" target="_blank" title="Children of the Candy Corn">POJ 3083</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3009" target="_blank" title="Curling 2.0">POJ 3009</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1321" target="_blank" title="棋盘问题">POJ 1321</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2251" target="_blank" title="Dungeon Master">POJ 2251</a></td>
+					</tr>
+					<tr>
+						<td rowspan="5">BFS</td>
+						<td><a href="http://poj.org/problem?id=3278" target="_blank" title="Catch That Cow">POJ 3278</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1426" target="_blank" title="Find The Multiple">POJ 1426</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3126" target="_blank" title="Prime Path">POJ 3126</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3087" target="_blank" title="Shuffle'm Up">POJ 3087</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3414" target="_blank" title="Pots">POJ 3414</a></td>
+					</tr>
+					<tr>
+						<td rowspan="4">Search and Pruning</td>
+						<td><a href="http://poj.org/problem?id=2531" target="_blank" title="Network Saboteur">POJ 2531</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1416" target="_blank" title="Shredding Company">POJ 1416</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2676" target="_blank" title="Sudoku">POJ 2676</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1129" target="_blank" title="Channel Allocation">POJ 1129</a></td>
+					</tr>
+					<tr>
+						<td rowspan="9">DP</td>
+						<td rowspan="2">Knapsack Problem</td>
+						<td><a href="http://poj.org/problem?id=1837" target="_blank" title="Balance">POJ 1837</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1276" target="_blank" title="Cash Machine">POJ 1276</a></td>
+					</tr>
+					<tr>
+						<td rowspan="7">Primary DP</td>
+						<td><a href="http://poj.org/problem?id=3267" target="_blank" title="The Cow Lexicon">POJ 3267</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1836" target="_blank" title="Alignment">POJ 1836</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1260" target="_blank" title="Pearls">POJ 1260</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2533" target="_blank" title="Longest Ordered Subsequence">POJ 2533</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3176" target="_blank" title="Cow Bowling">POJ 3176</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1080" target="_blank" title="Human Gene Functions">POJ 1080</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1159" target="_blank" title="Palindrome">POJ 1159</a></td>
+					</tr>
+					<tr>
+						<td rowspan="12">Mathematics</td>
+						<td rowspan="4">Combinatorics</td>
+						<td><a href="http://poj.org/problem?id=3252" target="_blank" title="Round Numbers">POJ 3252</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1850" target="_blank" title="Code">POJ 1850</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1019" target="_blank" title="Number Sequence">POJ 1019</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1942" target="_blank" title="Paths on a Grid">POJ 1942</a></td>
+					</tr>
+					<tr>
+						<td rowspan="4">Number Theory</td>
+						<td><a href="http://poj.org/problem?id=2635" target="_blank" title="The Embarrassed Cryptographer">POJ 2635</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3292" target="_blank" title="Semi-prime H-numbers">POJ 3292</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1845" target="_blank" title="Sumdiv">POJ 1845</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=2115" target="_blank" title="C Looooops">POJ 2115</a></td>
+					</tr>
+					<tr>
+						<td rowspan="4">Numeration</td>
+						<td><a href="http://poj.org/problem?id=3273" target="_blank" title="Monthly Expense">POJ 3273</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3258" target="_blank" title="River Hopscotch">POJ 3258</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1905" target="_blank" title="Expanding Rods">POJ 1905</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=3122" target="_blank" title="Pie">POJ 3122</a></td>
+					</tr>
+					<tr>
+						<td rowspan="7">Computational Geometry</td>
+						<td rowspan="1">Geometry Formulas</td>
+						<td><a href="http://poj.org/problem?id=1265" target="_blank" title="Area">POJ 1265</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Cross Product and Dot Product</td>
+						<td><a href="http://poj.org/problem?id=2031" target="_blank" title="Building a Space Station">POJ 2031</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1039" target="_blank" title="Pipe">POJ 1039</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Simple Polygon</td>
+						<td><a href="http://poj.org/problem?id=1408" target="_blank" title="Fishnet">POJ 1408</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1584" target="_blank" title="A Round Peg in a Ground Hole">POJ 1584</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Convex Hull</td>
+						<td><a href="http://poj.org/problem?id=2187" target="_blank" title="Beauty Contest">POJ 2187</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://poj.org/problem?id=1113" target="_blank" title="Wall">POJ 1113</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- Right Table -->
+		<div id="div2" class="main-div" style="width: 1px; overflow: auto; border-right: 1px solid #ddd;" onscroll="document.getElementById('div1').scrollTop = this.scrollTop;">
+			<table id="table2" class="table table-bordered table-hover" style="table-layout: fixed;">
+				<thead>
+					<tr class="head-user">
+						<th>
+							<div>
+								<a href="user.html">Alice<br />CS0001<br /><p>83/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th id="medal-3" class="all-solved">
+							<div>
+								<a href="user.html">bLue<br />CS0001<br /><p>92/92</p></a>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Clark<br />CS0001<br /><p>80/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th id="medal-1" class="all-solved">
+							<div>
+								<a href="user.html">Denny<br />CS0001<br /><p>92/92</p></a>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Emma<br />CS0001<br /><p>68/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th class="all-solved">
+							<div>
+								<a href="user.html">Ford<br />CS0001<br /><p>92/92</p></a>
+							</div>
+						</th>
+						<th id="medal-2" class="all-solved">
+							<div>
+								<a href="user.html">Grace<br />CS0002<br /><p>92/92</p></a>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Helen<br />CS0002<br /><p>83/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Ivan<br />CS0002<br /><p>86/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th class="all-solved">
+							<div>
+								<a href="user.html">Jack<br />CS0002<br /><p>92/92</p></a>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Katherine<br />CS0002<br /><p>80/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th class="all-solved">
+							<div>
+								<a href="user.html">Linda<br />CS0002<br /><p>92/92</p></a>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Mark<br />CS0002<br /><p>90/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Nancy<br />CS0003<br /><p>85/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th class="all-solved">
+							<div>
+								<a href="user.html">Owen<br />CS0003<br /><p>92/92</p></a>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Peter<br />CS0003<br /><p>90/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Quentin<br />CS0003<br /><p>90/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Richard<br />CS0003<br /><p>89/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Sarah<br />CS0003<br /><p>87/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+						<th>
+							<div>
+								<a href="user.html">Tina<br />CS0003<br /><p>91/92</p></a>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</th>
+					</tr>
+				</thead>
+				<tbody class="vertical-middle">
+					<tr>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-05</td>
+						<td class="success">2016-09-19</td>
+						<td class="success fb">2016-04-12</td>
+						<td></td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-10-06</td>
+						<td class="success">2016-09-28</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-14</td>
+						<td class="success">2016-07-24</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-05</td>
+						<td class="success">2016-09-19</td>
+						<td class="success fb">2016-04-21</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-12-10</td>
+						<td class="success">2016-09-07</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-15</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-12</td>
+						<td class="success">2016-09-28</td>
+						<td class="success fb">2016-05-12</td>
+						<td class="success">2016-09-27</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-28</td>
+						<td class="success">2016-09-07</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-27</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-09-20</td>
+						<td class="success">2016-07-24</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-09</td>
+						<td class="success">2016-07-28</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-07</td>
+						<td class="success">2016-09-26</td>
+						<td class="success fb">2016-04-13</td>
+						<td class="success">2016-09-10</td>
+						<td class="success">2016-07-19</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-10</td>
+						<td class="success">2016-09-07</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-27</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-21</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-07</td>
+						<td class="success">2016-10-10</td>
+						<td class="success fb">2016-04-13</td>
+						<td class="success">2016-09-10</td>
+						<td class="success">2016-07-20</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-27</td>
+						<td class="success">2016-09-10</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-10-10</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-07-07</td>
+						<td class="success">2016-09-23</td>
+						<td class="success fb">2016-05-20</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-10</td>
+						<td class="success">2016-09-10</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-28</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-24</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-08</td>
+						<td class="success">2016-09-21</td>
+						<td class="success fb">2016-06-14</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-07-20</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-09-07</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-22</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-29</td>
+						<td class="success fb">2016-07-08</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-12-27</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-12-20</td>
+						<td class="success">2016-09-25</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-09-22</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-27</td>
+						<td class="success fb">2016-07-05</td>
+						<td class="success">2016-10-10</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-23</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-23</td>
+						<td class="success">2016-09-14</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-09-22</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-28</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-28</td>
+						<td class="success fb">2016-07-09</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-20</td>
+						<td class="success">2016-07-21</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-27</td>
+						<td class="success">2016-10-01</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-29</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-09-23</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-09-25</td>
+						<td class="success">2016-07-30</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-29</td>
+						<td class="success fb">2016-07-09</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-09-14</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-10-14</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-09-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-09-25</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-22</td>
+						<td class="success fb">2016-07-09</td>
+						<td class="success">2016-12-02</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-26</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-09-28</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-17</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-09-27</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-10-08</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-29</td>
+						<td class="success fb">2016-07-09</td>
+						<td class="success">2016-12-02</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-09-24</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-10-22</td>
+						<td class="success">2016-09-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-17</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-09-27</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-09-30</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-10</td>
+						<td class="success">2016-09-20</td>
+						<td class="success fb">2016-04-09</td>
+						<td class="success">2016-09-08</td>
+						<td class="success">2016-07-20</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-09-13</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-23</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-09-14</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-01</td>
+						<td class="success fb">2016-07-10</td>
+						<td class="success">2016-11-07</td>
+						<td class="success">2016-08-01</td>
+						<td></td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-27</td>
+						<td></td>
+						<td class="success">2016-10-07</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-19</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-12-05</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-07-31</td>
+						<td class="success">2016-08-01</td>
+						<td></td>
+						<td class="success">2016-07-30</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-02</td>
+						<td class="success fb">2016-07-10</td>
+						<td class="success">2016-10-16</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-11-09</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-11-10</td>
+						<td class="success">2016-10-14</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-11-17</td>
+						<td class="success">2016-08-01</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-02</td>
+						<td class="success fb">2016-07-11</td>
+						<td class="success">2016-11-16</td>
+						<td class="success">2016-07-27</td>
+						<td></td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-10-14</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-10-20</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-10-20</td>
+						<td class="success">2016-08-02</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-03</td>
+						<td class="success fb">2016-07-11</td>
+						<td class="success">2016-11-17</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-12-09</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-11-05</td>
+						<td class="success">2016-10-15</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-31</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-10-20</td>
+						<td class="success">2016-08-02</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-25</td>
+						<td class="success fb">2016-07-11</td>
+						<td class="success">2016-11-20</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-12-05</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-12-29</td>
+						<td class="success">2016-11-20</td>
+						<td class="success">2016-07-31</td>
+						<td class="success">2016-10-20</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-10-22</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-23</td>
+						<td class="success">2016-08-01</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-29</td>
+						<td class="success fb">2016-07-12</td>
+						<td class="success">2016-11-19</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-11-05</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-07</td>
+						<td class="success">2016-11-18</td>
+						<td class="success">2016-07-31</td>
+						<td class="success">2016-11-07</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-07-30</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-02</td>
+						<td class="success fb">2016-07-12</td>
+						<td class="success">2016-11-19</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-10-25</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-10-28</td>
+						<td class="success">2016-10-15</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-10-20</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-08-02</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-03</td>
+						<td class="success fb">2016-07-12</td>
+						<td class="success">2016-11-19</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-07</td>
+						<td class="success">2016-10-15</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-08-02</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-22</td>
+						<td class="success fb">2016-07-13</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-12</td>
+						<td class="success">2016-11-19</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-09</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-08-01</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-28</td>
+						<td class="success fb">2016-07-16</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-11-25</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-12</td>
+						<td class="success">2016-11-20</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-11</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-10-23</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-10-09</td>
+						<td class="success">2016-08-01</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-03</td>
+						<td class="success fb">2016-07-16</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-11-26</td>
+						<td class="success">2016-07-20</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-12</td>
+						<td class="success">2016-11-20</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-09</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-10-23</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-10-09</td>
+						<td class="success">2016-07-30</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-11-21</td>
+						<td class="success fb">2016-07-29</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-15</td>
+						<td class="success">2016-10-22</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-11-16</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-26</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-08-03</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-03</td>
+						<td class="success fb">2016-07-29</td>
+						<td class="success">2016-11-24</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-12-03</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-11-16</td>
+						<td class="success">2016-11-27</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-12-17</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-11-27</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-10-30</td>
+						<td class="success">2016-08-03</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-17</td>
+						<td class="success fb">2016-07-27</td>
+						<td class="danger">2016-11-07</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2017-01-06</td>
+						<td class="success">2016-10-29</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-12-06</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-03</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-08-04</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-23</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-11-24</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-07-31</td>
+						<td class="success">2016-11-17</td>
+						<td class="success">2016-11-27</td>
+						<td class="success fb">2016-07-27</td>
+						<td></td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-11-02</td>
+						<td class="success">2016-08-04</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-04</td>
+						<td></td>
+						<td class="success">2016-08-04</td>
+						<td class="success fb">2016-07-31</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-03</td>
+						<td></td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-18</td>
+						<td class="success">2016-08-04</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-04</td>
+						<td></td>
+						<td class="success">2016-08-05</td>
+						<td class="success fb">2016-07-31</td>
+						<td class="success">2016-11-22</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-03</td>
+						<td></td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-08-04</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success">2016-08-22</td>
+						<td></td>
+						<td class="success">2016-08-17</td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+						<td class="success fb">2016-08-01</td>
+						<td></td>
+						<td class="success">2016-12-05</td>
+						<td class="success">2016-09-20</td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-12-02</td>
+						<td class="success">2016-12-16</td>
+						<td class="success">2016-09-14</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-11-29</td>
+						<td class="ac-new">2017-01-14</td>
+						<td class="success">2016-10-07</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-17</td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+						<td class="success fb">2016-08-01</td>
+						<td></td>
+						<td class="success">2016-12-04</td>
+						<td class="success">2016-09-21</td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-12-02</td>
+						<td></td>
+						<td class="success">2016-09-14</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-05</td>
+						<td class="success fb">2016-07-25</td>
+						<td class="success">2016-11-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-11-15</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-11-26</td>
+						<td class="success">2016-09-13</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-11-17</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-11-03</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-02</td>
+						<td class="success">2016-08-04</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-17</td>
+						<td class="success fb">2016-07-31</td>
+						<td class="success">2016-11-25</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-11-15</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-22</td>
+						<td class="success">2016-10-07</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-10-28</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-10-17</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-08-06</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-11-26</td>
+						<td class="success fb">2016-04-20</td>
+						<td class="success">2016-10-10</td>
+						<td class="success">2016-07-20</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-09-10</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-10-28</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-10-10</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2016-07-30</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-10-14</td>
+						<td class="success fb">2016-04-09</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-07-20</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-09-20</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-10-10</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-10-09</td>
+						<td class="success">2016-07-27</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-14</td>
+						<td class="success fb">2016-04-27</td>
+						<td class="success">2016-11-16</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-09-20</td>
+						<td class="success">2016-10-06</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-10-09</td>
+						<td class="success">2016-08-02</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-21</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-21</td>
+						<td class="success fb">2016-07-21</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-09-24</td>
+						<td class="success">2016-11-01</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-10-29</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-02</td>
+						<td class="success">2016-07-21</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-10-30</td>
+						<td class="success">2016-07-27</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-12-05</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-10-28</td>
+						<td class="success fb">2016-07-28</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-29</td>
+						<td class="success">2016-11-07</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-10-26</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-11-05</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-10-19</td>
+						<td class="success">2016-08-05</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-12-05</td>
+						<td class="success fb">2016-07-28</td>
+						<td class="success">2016-12-13</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-03</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-10-31</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-06</td>
+						<td></td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-02</td>
+						<td class="success">2016-08-06</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-12-06</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-08-08</td>
+						<td class="success fb">2016-08-03</td>
+						<td class="success">2017-01-08</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-10-31</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-11-04</td>
+						<td class="success">2016-08-09</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2016-12-06</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-08-06</td>
+						<td class="success fb">2016-08-03</td>
+						<td class="success">2016-10-31</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-09-24</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-11-04</td>
+						<td class="success">2016-08-08</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2016-12-06</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-08-09</td>
+						<td class="success fb">2016-08-03</td>
+						<td class="success">2016-10-21</td>
+						<td class="success">2016-11-15</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-11-04</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-12-12</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-11-14</td>
+						<td class="success">2016-08-19</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-12-06</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-10-12</td>
+						<td class="success fb">2016-07-26</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-09-26</td>
+						<td class="success">2016-11-15</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-10-29</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-11-05</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-10-19</td>
+						<td class="success">2016-08-05</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-07-18</td>
+						<td class="success">2016-10-22</td>
+						<td class="success fb">2016-04-12</td>
+						<td class="success">2016-09-28</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-09-23</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-10-22</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-09-14</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-10-09</td>
+						<td class="success">2016-07-30</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-21</td>
+						<td class="success fb">2016-07-25</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-11-07</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-22</td>
+						<td class="success">2016-10-09</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-10-26</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-10-26</td>
+						<td class="success">2016-08-09</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-13</td>
+						<td class="success fb">2016-07-19</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-23</td>
+						<td class="success">2016-11-02</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-11-24</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-10</td>
+						<td class="success">2016-08-08</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-11-05</td>
+						<td class="success">2016-08-09</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-22</td>
+						<td class="success fb">2016-07-07</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-12-26</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-12-04</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-11-17</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-09</td>
+						<td class="ac-new">2017-01-12</td>
+						<td class="success">2016-08-09</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-21</td>
+						<td class="success fb">2016-07-20</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-11-14</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-11-02</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-12-03</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-11-16</td>
+						<td class="success">2016-07-21</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-09</td>
+						<td class="ac-new">2017-01-12</td>
+						<td class="success">2016-08-09</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-11-02</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-13</td>
+						<td class="success fb">2016-07-28</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-10-16</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-17</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-22</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-11-14</td>
+						<td class="success">2016-08-02</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-02</td>
+						<td class="success fb">2016-07-10</td>
+						<td class="success">2016-10-16</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-11-09</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-11-10</td>
+						<td class="success">2016-10-14</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-11-17</td>
+						<td class="success">2016-08-01</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2016-11-07</td>
+						<td class="success fb">2016-08-01</td>
+						<td class="success">2016-11-22</td>
+						<td class="success">2016-08-01</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2017-01-04</td>
+						<td class="success">2016-10-17</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-11-27</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-08-09</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-11-02</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-22</td>
+						<td class="success fb">2016-07-20</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-11</td>
+						<td class="success">2016-07-30</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-13</td>
+						<td class="success fb">2016-07-18</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-10-22</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-10-22</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-20</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-08-10</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-10</td>
+						<td class="success">2016-09-20</td>
+						<td class="success fb">2016-04-09</td>
+						<td class="success">2016-09-08</td>
+						<td class="success">2016-07-20</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-09-13</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-09-23</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2016-09-14</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-07-29</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-07</td>
+						<td class="success fb">2016-07-25</td>
+						<td class="success">2016-11-11</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2016-11-10</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-11-17</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-11-04</td>
+						<td class="success">2016-08-11</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-21</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-11-08</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-11-12</td>
+						<td class="success fb">2016-07-19</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2016-11-10</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-11-04</td>
+						<td class="success">2016-08-04</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-12</td>
+						<td class="success">2016-11-09</td>
+						<td class="success fb">2016-07-25</td>
+						<td class="success">2016-11-22</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2016-11-11</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-11-21</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-08-12</td>
+						<td class="success">2016-08-12</td>
+						<td class="success">2016-08-12</td>
+						<td class="success">2016-08-06</td>
+						<td class="success">2016-11-04</td>
+						<td class="success">2016-08-11</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-22</td>
+						<td class="success fb">2016-07-22</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-12-02</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2017-01-01</td>
+						<td class="success">2016-12-02</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-12-12</td>
+						<td class="success">2016-07-24</td>
+						<td class="success">2016-08-12</td>
+						<td class="success">2016-08-12</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-12-23</td>
+						<td class="success">2016-08-02</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-12-02</td>
+						<td class="success fb">2016-07-26</td>
+						<td class="success">2016-12-29</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-07</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-12-06</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-12-12</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-11-25</td>
+						<td class="success">2016-08-13</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-12-04</td>
+						<td class="success">2016-08-13</td>
+						<td></td>
+						<td class="success">2016-08-13</td>
+						<td class="success fb">2016-08-08</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-12-18</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-13</td>
+						<td class="ac-new">2017-01-16</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-14</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-11-25</td>
+						<td class="success">2016-08-13</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-12-02</td>
+						<td class="success">2016-08-13</td>
+						<td></td>
+						<td class="success">2016-08-15</td>
+						<td class="success fb">2016-08-08</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-12-14</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-13</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-23</td>
+						<td class="success fb">2016-08-08</td>
+						<td></td>
+						<td class="success">2016-08-12</td>
+						<td></td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-12-13</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-11-27</td>
+						<td class="success">2016-08-13</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-24</td>
+						<td class="success fb">2016-08-03</td>
+						<td class="success">2016-10-29</td>
+						<td class="success">2016-08-14</td>
+						<td></td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-09</td>
+						<td class="success">2016-10-17</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-12-05</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-11-27</td>
+						<td class="success">2016-08-15</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-23</td>
+						<td class="success fb">2016-08-05</td>
+						<td class="success">2016-11-07</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2017-01-05</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2016-10-10</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-12-05</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-16</td>
+						<td class="ac-new">2017-01-13</td>
+						<td class="success">2016-08-15</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-10-17</td>
+						<td class="success fb">2016-07-27</td>
+						<td class="danger">2016-11-07</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-07-30</td>
+						<td class="success">2017-01-06</td>
+						<td class="success">2016-10-29</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-12-06</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-11-03</td>
+						<td class="success">2016-08-02</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-08-03</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-08-04</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-10-17</td>
+						<td class="success fb">2016-08-02</td>
+						<td class="success">2016-11-23</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-10-15</td>
+						<td class="success">2016-10-30</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-12-06</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-09-28</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-09-29</td>
+						<td class="success">2016-08-16</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-10-22</td>
+						<td class="success fb">2016-08-03</td>
+						<td class="success">2016-11-24</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-12-16</td>
+						<td class="success">2016-10-23</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-12-08</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-11-10</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-12-04</td>
+						<td class="success">2016-08-16</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-11-17</td>
+						<td class="success fb">2016-07-27</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-10-10</td>
+						<td class="success">2016-09-14</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-09-28</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-10-10</td>
+						<td class="success">2016-08-03</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-11-16</td>
+						<td class="success fb">2016-07-26</td>
+						<td class="success">2016-08-12</td>
+						<td class="success">2016-10-17</td>
+						<td class="success">2016-09-13</td>
+						<td class="success">2016-08-04</td>
+						<td class="success">2016-12-10</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-09-28</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-08-05</td>
+						<td class="success">2016-10-11</td>
+						<td class="success">2016-08-03</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-10-28</td>
+						<td class="success fb">2016-08-03</td>
+						<td></td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-10-31</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-11-09</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-12-04</td>
+						<td class="success">2016-08-19</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-25</td>
+						<td class="success fb">2016-07-22</td>
+						<td class="success">2016-10-28</td>
+						<td class="success">2016-07-26</td>
+						<td class="success">2016-11-24</td>
+						<td class="success">2016-07-25</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-11-09</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-12-04</td>
+						<td class="success">2016-08-16</td>
+					</tr>
+					<tr>
+						<td class="success">2016-09-11</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-12-28</td>
+						<td class="success">2016-08-18</td>
+						<td></td>
+						<td class="success">2016-08-19</td>
+						<td class="success fb">2016-08-14</td>
+						<td class="success">2016-12-30</td>
+						<td class="success">2016-10-07</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-11-23</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-11-10</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-09-13</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-10-31</td>
+						<td class="success">2016-08-16</td>
+					</tr>
+					<tr>
+						<td class="success">2016-09-13</td>
+						<td class="success">2016-08-19</td>
+						<td class="ac-new">2017-01-13</td>
+						<td class="success fb">2016-08-15</td>
+						<td class="success">2016-12-30</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-12-29</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-11-22</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-12-15</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-09-13</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-12-04</td>
+						<td class="success">2016-08-17</td>
+					</tr>
+					<tr>
+						<td class="success">2016-09-20</td>
+						<td class="success">2016-08-19</td>
+						<td class="ac-new">2017-01-14</td>
+						<td class="success">2016-08-13</td>
+						<td></td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-16</td>
+						<td class="success">2016-12-12</td>
+						<td class="success">2016-10-17</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-11-23</td>
+						<td class="success fb">2016-08-12</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-12-15</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-19</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-27</td>
+						<td class="ac-new">2017-01-13</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2017-01-05</td>
+						<td class="success fb">2016-07-27</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-12-14</td>
+						<td class="success">2016-10-17</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-08-15</td>
+						<td class="success">2016-08-12</td>
+						<td class="success">2016-11-11</td>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-08-17</td>
+						<td class="success">2016-12-03</td>
+						<td class="success">2016-08-17</td>
+					</tr>
+					<tr>
+						<td class="success">2016-09-21</td>
+						<td class="success">2016-08-19</td>
+						<td></td>
+						<td class="success fb">2016-08-06</td>
+						<td class="ac-new">2017-01-16</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-17</td>
+						<td class="ac-new">2017-01-15</td>
+						<td class="success">2016-10-19</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-11-24</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-12-10</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-19</td>
+					</tr>
+					<tr>
+						<td class="success">2016-09-21</td>
+						<td class="success fb">2016-07-20</td>
+						<td></td>
+						<td class="success">2016-07-25</td>
+						<td class="ac-new">2017-01-15</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-17</td>
+						<td class="ac-new">2017-01-14</td>
+						<td class="success">2016-10-18</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-11-24</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-10-29</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-21</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-19</td>
+					</tr>
+					<tr>
+						<td class="success">2016-09-22</td>
+						<td class="success">2016-08-18</td>
+						<td></td>
+						<td class="success fb">2016-08-08</td>
+						<td class="failed-new">2017-01-15</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-18</td>
+						<td class="ac-new">2017-01-14</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-12-17</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-10-26</td>
+						<td class="success">2016-08-20</td>
+					</tr>
+					<tr>
+						<td class="success">2016-09-23</td>
+						<td class="success">2016-08-19</td>
+						<td></td>
+						<td class="success fb">2016-08-08</td>
+						<td class="ac-new">2017-01-16</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-12-30</td>
+						<td class="success">2016-10-24</td>
+						<td class="success">2016-09-19</td>
+						<td class="success">2016-11-25</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-25</td>
+						<td></td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-09-20</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-12-02</td>
+						<td class="success">2016-08-22</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-21</td>
+						<td class="success">2016-07-22</td>
+						<td class="success">2016-12-09</td>
+						<td class="success">2016-07-26</td>
+						<td class="ac-new">2017-01-16</td>
+						<td class="success fb">2016-07-21</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-12-01</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-08-13</td>
+						<td class="success">2016-11-28</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-07-21</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-07-27</td>
+						<td class="success">2016-08-18</td>
+						<td class="success">2016-12-04</td>
+						<td class="success">2016-08-20</td>
+					</tr>
+					<tr>
+						<td class="success">2016-08-20</td>
+						<td class="success fb">2016-08-09</td>
+						<td class="success">2016-12-10</td>
+						<td class="success">2016-08-10</td>
+						<td class="ac-new">2017-01-16</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-12-05</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-10-27</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-22</td>
+					</tr>
+					<tr>
+						<td class="success">2016-09-26</td>
+						<td class="success fb">2016-08-09</td>
+						<td class="success">2016-12-12</td>
+						<td class="success">2016-08-10</td>
+						<td class="success">2017-01-06</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-12-07</td>
+						<td class="success">2016-10-12</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-10-28</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-21</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success fb">2016-08-10</td>
+						<td></td>
+						<td class="success">2016-08-11</td>
+						<td class="success">2016-10-29</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-11-30</td>
+						<td class="success">2016-10-25</td>
+						<td class="success">2016-09-18</td>
+						<td class="success">2016-11-29</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-10-28</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-19</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-21</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success">2016-08-20</td>
+						<td class="failed-new">2017-01-13</td>
+						<td class="success fb">2016-03-28</td>
+						<td></td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-19</td>
+						<td class="ac-new">2017-01-14</td>
+						<td class="success">2016-10-26</td>
+						<td class="success">2016-09-17</td>
+						<td></td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-22</td>
+						<td class="ac-new">2017-01-16</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-22</td>
+					</tr>
+					<tr>
+						<td class="success">2016-07-28</td>
+						<td class="success">2016-07-28</td>
+						<td></td>
+						<td class="success">2016-07-29</td>
+						<td></td>
+						<td class="success fb">2016-07-28</td>
+						<td class="success">2016-08-19</td>
+						<td class="ac-new">2017-01-13</td>
+						<td class="success">2016-11-01</td>
+						<td class="success">2016-08-15</td>
+						<td></td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-20</td>
+						<td></td>
+						<td class="success">2016-07-29</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-08-20</td>
+						<td class="success">2016-12-11</td>
+						<td class="success">2016-08-22</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success">2016-08-21</td>
+						<td></td>
+						<td class="success fb">2016-08-12</td>
+						<td></td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-20</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-09-22</td>
+						<td></td>
+						<td class="success">2016-08-24</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-09-26</td>
+						<td></td>
+						<td class="success">2016-12-25</td>
+						<td class="success">2016-08-25</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success">2016-08-21</td>
+						<td></td>
+						<td class="success fb">2016-08-19</td>
+						<td></td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-20</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-09-15</td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-08-24</td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-09-26</td>
+						<td class="success">2016-09-22</td>
+						<td class="success">2016-12-29</td>
+						<td class="success">2016-08-28</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success">2016-08-21</td>
+						<td></td>
+						<td class="success fb">2016-08-18</td>
+						<td></td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-21</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-09-14</td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-08-24</td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-09-28</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-08-25</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-12-26</td>
+						<td class="success fb">2016-08-05</td>
+						<td></td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-21</td>
+						<td class="ac-new">2017-01-16</td>
+						<td class="success">2016-09-12</td>
+						<td class="success">2016-09-13</td>
+						<td></td>
+						<td class="success">2016-08-24</td>
+						<td class="success">2016-08-25</td>
+						<td class="ac-new">2017-01-16</td>
+						<td class="success">2016-09-10</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-08-22</td>
+						<td></td>
+						<td class="success">2016-08-23</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="success">2016-08-22</td>
+						<td class="success">2016-12-27</td>
+						<td class="success fb">2016-08-05</td>
+						<td></td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-21</td>
+						<td></td>
+						<td></td>
+						<td class="success">2016-09-12</td>
+						<td></td>
+						<td class="success">2016-08-24</td>
+						<td></td>
+						<td class="ac-new">2017-01-14</td>
+						<td class="success">2016-09-13</td>
+						<td class="success">2016-08-23</td>
+						<td class="success">2016-08-25</td>
+						<td class="success">2016-08-25</td>
+						<td></td>
+						<td class="success">2016-08-23</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<script>
+// Initialization
+$(function() {
+	// Add title & progress
+	$("#div1 tbody tr").each(function() {
+		$(this).children("td").each(function(idx, e) {
+			if(idx < 2) $(e).attr("title", $(e).text());
+		});
+	});
+	$("#table2 th .progress").each(function() {
+		var value = $(this).children(".progress-bar").attr("aria-valuenow");
+		var title = value + '% Complete'
+		$(this).attr("title", title);
+		$(this).children(".progress-bar").append('<span class="sr-only">' + title + '</span>');
+		$(this).children(".progress-bar").css("width", value + '%');
+	});
+	// expanda
+	$("#div1 a").parent("td").expanda();
+	$("#table2 th").each(function() {
+		$(this).children("div:first").expanda();
+	});
+	// dot-ellipsis
+	var heightPerProb = 38;
+	var edge = 18;
+	$("#div1 td").each(function() {
+		$(this).addClass("dot-ellipsis");
+		var num = $(this).attr("rowspan");
+		if(typeof(num) == "undefined") num = 1;
+		$(this).dotdotdot({
+			fallbackToLetter: false,
+			height: num*heightPerProb-edge
+		});
+	});
+	// tooltip
+	$("#div1 a").attr({"data-toggle": "tooltip", "data-placement": "right"});
+	$("[data-toggle='tooltip']").click(function() {
+		$(this).blur();
+	});
+});
+// Enable tooltip
+$(function() { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+</body>
+</html>

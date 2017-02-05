@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/back_to_top.min.css?v3.0.4" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/sbs.min.css?v3.0.4" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/expanda.min.js?v3.0.4"></script>
+<script src="js/back_to_top.min.js?v3.0.4"></script>
+<!--[if IE]>
+<script src="js/html5shiv-printshiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+<script>
+$(function() { $('input, textarea').placeholder(); });
+</script>
+<![endif]-->
+<title>bLue - StepByStep</title>
+</head>
+<body>
+<!-- About Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">About</h4>
+			</div>
+			<div class="modal-body">
+			<p><h3><span class="glyphicon glyphicon-send" aria-hidden="true"></span> StepByStep <sup>3.0β</sup></h3>
+			<h6>version 3.0.4</h6>
+			<h6>Copyright © 2016-2017 StepByStep</h6>
+			<h6>Designed by <a href="https://HellobLue.net" target="_blank">bLue</a></h6>
+			<h6><a href="https://github.com/dreamerblue/stepbystep" target="_blank">Open Source Project</a></h6>
+			<p></p><br />
+			<p class="text-center">
+			Have problem? Please contact <a href="mailto:tbdblue@gmail.com" target="_blank">tbdblue@gmail.com</a></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Container -->
+<div class="container">
+	<div class="row-fluid">
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" 
+					 data-target="#sbs-navbar-collapse">
+						<span class="sr-only">Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="">
+					<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+					StepByStep <sup>3.0 beta</sup></a>
+				</div>
+				<div class="collapse navbar-collapse" id="sbs-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Step<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<!-- Data: Step List -->
+						</ul>
+						</li>
+						<li id="status"><a href="status.html">Status</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							More<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<!-- Data: More Menu -->
+							<li><a data-toggle="modal" data-target="#myModal" href="javascript:void(0)">About</a></li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Nav Bar Blank -->
+		<div class="blank"></div>
+		<!-- Back To Top -->
+		<p id="back-to-top">
+			<a href="#top"><span><img alt="Back To Top" src="images/back_to_top.png"></span>Top</a>
+		</p>
+		<!-- User Info -->
+		<div class="text-center">
+			<h2><!-- Data: User Name --></h2>
+			<h5><!-- Data: Class --></h5>
+			<h5><!-- Data: Personal Links --></h5>
+		</div>
+		<!-- Steps -->
+		<div class="user-step-table">
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+				<!-- Data: Steps' Name and Complete Status -->
+			</ul>
+			<div class="tab-content">
+				<!-- Tab 1 -->
+				<div role="tabpanel" class="tab-pane fade" id="sdut-1" aria-labelledBy="<!-- Data: Tab Name -->">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th style="width: 20%;">Stage</th>
+								<th style="width: 40%;">Section</th>
+								<th style="width: 15%;">Problem</th>
+								<th style="width: 25%;">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Data: Step's Complete Status -->
+						</tbody>
+					</table>
+				</div>
+				<!-- Tab N -->
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+// Initialization
+$(function() {
+	// Add title
+	$(".table tr").each(function() {
+		$(this).children("td").each(function(idx, e) {
+			if(idx < 2) $(e).attr("title", $(e).text());
+		});
+	});
+	// expanda
+	$(".table a").parent("td").expanda();
+	// tooltip
+	$(".table a").attr({"data-toggle": "tooltip", "data-placement": "right"});
+	$("[data-toggle='tooltip']").click(function() {
+		$(this).blur();
+	});
+});
+// Enable tooltip
+$(function() { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+</body>
+</html>

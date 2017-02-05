@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/back_to_top.min.css?v3.0.4" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/sbs.min.css?v3.0.4" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/expanda.min.js?v3.0.4"></script>
+<script src="js/back_to_top.min.js?v3.0.4"></script>
+<!--[if IE]>
+<script src="js/html5shiv-printshiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+<script>
+$(function() { $('input, textarea').placeholder(); });
+</script>
+<![endif]-->
+<title>bLue - StepByStep</title>
+</head>
+<body>
+<!-- About Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">About</h4>
+			</div>
+			<div class="modal-body">
+			<p><h3><span class="glyphicon glyphicon-send" aria-hidden="true"></span> StepByStep <sup>3.0β</sup></h3>
+			<h6>version 3.0.4</h6>
+			<h6>Copyright © 2016-2017 StepByStep</h6>
+			<h6>Designed by <a href="https://HellobLue.net" target="_blank">bLue</a></h6>
+			<h6><a href="https://github.com/dreamerblue/stepbystep" target="_blank">Open Source Project</a></h6>
+			<p></p><br />
+			<p class="text-center">
+			Have problem? Please contact <a href="mailto:tbdblue@gmail.com" target="_blank">tbdblue@gmail.com</a></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Container -->
+<div class="container">
+	<div class="row-fluid">
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" 
+					 data-target="#sbs-navbar-collapse">
+						<span class="sr-only">Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="">
+					<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+					StepByStep <sup>3.0 beta</sup></a>
+				</div>
+				<div class="collapse navbar-collapse" id="sbs-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Step<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="step.html">Step 1</a></li>
+							<li><a href="step.html">Step 2</a></li>
+							<li><a href="step.html">Step 3</a></li>
+							<li class="divider"></li>
+							<li><a href="step.html">Step 4</a></li>
+							<li><a href="step.html">Step 5</a></li>
+							<li><a href="step.html">Step 6</a></li>
+						</ul>
+						</li>
+						<li id="status"><a href="status.html">Status</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							More<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="">FAQ</a></li>
+							<li><a data-toggle="modal" data-target="#myModal" href="javascript:void(0)">About</a></li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Nav Bar Blank -->
+		<div class="blank"></div>
+		<!-- Back To Top -->
+		<p id="back-to-top">
+			<a href="#top"><span><img alt="Back To Top" src="images/back_to_top.png"></span>Top</a>
+		</p>
+		<!-- User Info -->
+		<div class="text-center">
+			<h2>bLue</h2>
+			<h5>CS0001</h5>
+			<h5><a href="https://HellobLue.net" target="_blank"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Page</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/dreamerblue" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> GitHub</a></h5>
+		</div>
+		<!-- Steps -->
+		<div class="user-step-table">
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+				<li role="presentation">
+					<a href="#sdut-1" id="sdut-1-tab" role="tab" data-toggle="tab" aria-controls="sdut-1">Basic Programming</a>
+				</li>
+				<li role="presentation" class="active">
+					<a href="#poj-1" id="poj-1-tab" role="tab" data-toggle="tab" aria-controls="poj-1" >Primary Algorithm <span class="badge">92/92</span></a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<!-- Tab 1 -->
+				<div role="tabpanel" class="tab-pane fade" id="sdut-1" aria-labelledBy="sdut-1-tab">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th style="width: 20%;">Stage</th>
+								<th style="width: 40%;">Section</th>
+								<th style="width: 15%;">Problem</th>
+								<th style="width: 25%;">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="17">Sequential Structure</td>
+								<td rowspan="7">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1000" target="_blank" title="A+B Problem">SDUT 1000</a></td>
+								<td class="success">2015-09-30 09:18:20</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1110" target="_blank" title="C语言实验——Hello World!（printf练习）">SDUT 1110</a></td>
+								<td class="success">2015-09-30 09:13:58</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1111" target="_blank" title="C语言实验——格式化输出（常量练习）">SDUT 1111</a></td>
+								<td class="success">2015-09-30 09:20:43</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1113" target="_blank" title="C语言实验——单个字符输入和输出（顺序结构）">SDUT 1113</a></td>
+								<td class="success">2015-09-30 09:24:33</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1115" target="_blank" title="C语言实验——交换两个整数的值（顺序结构）">SDUT 1115</a></td>
+								<td class="success">2015-09-30 10:12:55</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1116" target="_blank" title="C语言实验——转换字母（顺序结构）">SDUT 1116</a></td>
+								<td class="success">2015-09-30 10:17:35</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1203" target="_blank" title="C语言实验——买糖果">SDUT 1203</a></td>
+								<td class="success">2015-09-30 10:37:46</td>
+							</tr>
+							<tr>
+								<td rowspan="10">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1167" target="_blank" title="C语言实验——三个整数和、积与平均值">SDUT 1167</a></td>
+								<td class="success">2015-09-30 10:47:32</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1189" target="_blank" title="C语言实验——逆置正整数">SDUT 1189</a></td>
+								<td class="success">2015-09-30 11:09:02</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1207" target="_blank" title="C语言实验——圆柱体计算">SDUT 1207</a></td>
+								<td class="success">2015-09-30 12:01:07</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1208" target="_blank" title="C语言实验——温度转换">SDUT 1208</a></td>
+								<td class="success">2015-09-30 12:08:44</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1112" target="_blank" title="C语言实验——图形输出（字符常量练习）">SDUT 1112</a></td>
+								<td class="success">2015-09-30 12:23:39</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1114" target="_blank" title="C语言实验——计算A+B（顺序结构）">SDUT 1114</a></td>
+								<td class="success">2015-09-30 12:30:48</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1151" target="_blank" title="C语言实验——输出字符串">SDUT 1151</a></td>
+								<td class="success">2015-09-30 09:22:40</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1152" target="_blank" title="C语言实验——求两个整数之和">SDUT 1152</a></td>
+								<td class="success">2015-09-30 12:34:33</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1155" target="_blank" title="C语言实验——打印图形">SDUT 1155</a></td>
+								<td class="success">2015-09-30 13:31:33</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1156" target="_blank" title="C语言实验——用*号输出字母C的图案">SDUT 1156</a></td>
+								<td class="success">2015-09-30 13:42:25</td>
+							</tr>
+							<tr>
+								<td rowspan="16">Selective Structure</td>
+								<td rowspan="5">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1117" target="_blank" title="C语言实验——求绝对值（选择结构）">SDUT 1117</a></td>
+								<td class="success">2015-10-07 19:28:46</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1154" target="_blank" title="C语言实验——求三个整数的最大值">SDUT 1154</a></td>
+								<td class="success">2015-10-07 19:36:21</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1118" target="_blank" title="C语言实验——从大到小输出a、b、c（选择结构）">SDUT 1118</a></td>
+								<td class="success">2015-10-07 20:34:29</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1580" target="_blank" title="闰年">SDUT 1580</a></td>
+								<td class="success">2015-10-07 21:33:20</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1160" target="_blank" title="C语言实验——某年某月的天数">SDUT 1160</a></td>
+								<td class="success">2015-10-07 22:06:12</td>
+							</tr>
+							<tr>
+								<td rowspan="11">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1148" target="_blank" title="相加和最大值">SDUT 1148</a></td>
+								<td class="success">2015-10-07 19:48:12</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1153" target="_blank" title="C语言实验——求两个整数之中较大者">SDUT 1153</a></td>
+								<td class="success">2015-10-07 19:54:41</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1190" target="_blank" title="C语言实验——找中间数">SDUT 1190</a></td>
+								<td class="success">2015-10-07 21:07:41</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1202" target="_blank" title="C语言实验——整除">SDUT 1202</a></td>
+								<td class="success">2015-10-07 21:36:48</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1119" target="_blank" title="C语言实验——输入数字星期，输出英文(switch语句)">SDUT 1119</a></td>
+								<td class="success">2015-10-03 22:40:29</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1133" target="_blank" title="C/C++经典程序训练3---模拟计算器">SDUT 1133</a></td>
+								<td class="success">2015-10-03 22:35:55</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1158" target="_blank" title="C语言实验——两个数最大">SDUT 1158</a></td>
+								<td class="success">2015-10-07 22:11:08</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1177" target="_blank" title="C语言实验——时间间隔">SDUT 1177</a></td>
+								<td class="success">2015-10-07 22:34:05</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1183" target="_blank" title="C语言实验——三个数排序">SDUT 1183</a></td>
+								<td class="success">2015-10-07 22:36:56</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2732" target="_blank" title="小鑫の日常系列故事（一）——判断对错">SDUT 2732</a></td>
+								<td class="success">2015-10-07 22:43:02</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/3102" target="_blank" title="小鑫追女神">SDUT 3102</a></td>
+								<td class="success">2015-10-07 22:48:46</td>
+							</tr>
+							<tr>
+								<td rowspan="12">Loop Structure - while</td>
+								<td rowspan="6">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1010" target="_blank" title="A+B for Input-Output Practice (I)">SDUT 1010</a></td>
+								<td class="success">2015-10-03 22:48:53</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1012" target="_blank" title="A+B for Input-Output Practice (III)">SDUT 1012</a></td>
+								<td class="success">2015-10-08 09:02:29</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1016" target="_blank" title="A+B for Input-Output Practice (VII)">SDUT 1016</a></td>
+								<td class="success">2015-10-08 09:51:23</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1209" target="_blank" title="求实数绝对值">SDUT 1209</a></td>
+								<td class="success">2015-10-08 14:44:44</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1235" target="_blank" title="计算球体积">SDUT 1235</a></td>
+								<td class="success">2015-10-08 16:48:11</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2543" target="_blank" title="整除">SDUT 2543</a></td>
+								<td class="success">2015-10-08 21:15:57</td>
+							</tr>
+							<tr>
+								<td rowspan="6">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1442" target="_blank" title="优越数">SDUT 1442</a></td>
+								<td class="success">2015-10-08 15:53:26</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2252" target="_blank" title="分段函数求值">SDUT 2252</a></td>
+								<td class="success">2015-10-08 20:13:07</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2555" target="_blank" title="压岁钱">SDUT 2555</a></td>
+								<td class="success">2015-10-08 21:24:03</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2562" target="_blank" title="相似三角形">SDUT 2562</a></td>
+								<td class="success">2015-10-08 22:37:50</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2742" target="_blank" title="洗衣服">SDUT 2742</a></td>
+								<td class="success">2015-10-08 22:41:55</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2743" target="_blank" title="直角坐标系">SDUT 2743</a></td>
+								<td class="success">2015-10-08 22:53:37</td>
+							</tr>
+							<tr>
+								<td rowspan="29">Loop Structure - for</td>
+								<td rowspan="8">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1011" target="_blank" title="A+B for Input-Output Practice (II)">SDUT 1011</a></td>
+								<td class="success">2015-10-03 22:57:50</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1131" target="_blank" title="C/C++训练1---最大公约数与最小公倍数">SDUT 1131</a></td>
+								<td class="success">2015-10-11 22:30:01</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1122" target="_blank" title="C语言实验——判断素数（循环结构）">SDUT 1122</a></td>
+								<td class="success">2015-10-16 22:49:47</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1132" target="_blank" title="C/C++经典程序训练2---斐波那契数列">SDUT 1132</a></td>
+								<td class="success">2015-10-16 22:50:07</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1193" target="_blank" title="C语言实验——圆周率">SDUT 1193</a></td>
+								<td class="success">2015-10-16 22:53:26</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1013" target="_blank" title="A+B for Input-Output Practice (IV)">SDUT 1013</a></td>
+								<td class="success">2015-10-16 22:53:57</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1137" target="_blank" title="C/C++练习7---求某个范围内的所有素数">SDUT 1137</a></td>
+								<td class="success">2015-10-14 17:42:42</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1174" target="_blank" title="C语言实验——打印菱形">SDUT 1174</a></td>
+								<td class="success">2015-10-16 22:55:22</td>
+							</tr>
+							<tr>
+								<td rowspan="21">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1123" target="_blank" title="C语言实验——求阶乘（循环结构）">SDUT 1123</a></td>
+								<td class="success">2015-10-16 22:52:04</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1134" target="_blank" title="数列求和">SDUT 1134</a></td>
+								<td class="success">2015-10-16 22:52:50</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1147" target="_blank" title="求绝对值最大值">SDUT 1147</a></td>
+								<td class="success">2015-10-16 22:53:11</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1169" target="_blank" title="C语言实验——分数序列">SDUT 1169</a></td>
+								<td class="success">2015-10-16 22:53:42</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1165" target="_blank" title="C语言实验——素数">SDUT 1165</a></td>
+								<td class="success">2015-10-16 22:55:03</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1179" target="_blank" title="C语言实验——打印数字图形">SDUT 1179</a></td>
+								<td class="success">2015-10-16 22:55:53</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1239" target="_blank" title="水仙花数">SDUT 1239</a></td>
+								<td class="success">2015-10-16 22:56:11</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2250" target="_blank" title="简单计算">SDUT 2250</a></td>
+								<td class="success">2015-10-16 22:56:32</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2251" target="_blank" title="期末考试之分等级">SDUT 2251</a></td>
+								<td class="success">2015-10-16 22:57:05</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1120" target="_blank" title="C语言实验——计算1到n的和（循环结构）">SDUT 1120</a></td>
+								<td class="success">2015-10-03 23:05:04</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1121" target="_blank" title="C语言实验——for循环打印图形（循环结构）">SDUT 1121</a></td>
+								<td class="success">2015-10-16 22:57:44</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1135" target="_blank" title="C/C++经典程序训练5---图形打印问题">SDUT 1135</a></td>
+								<td class="success">2015-10-16 22:58:04</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1159" target="_blank" title="C语言实验——两个数比较">SDUT 1159</a></td>
+								<td class="success">2015-10-16 22:58:20</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1181" target="_blank" title="C语言实验——最小公倍数和最大公约数">SDUT 1181</a></td>
+								<td class="success">2015-10-16 22:58:39</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1194" target="_blank" title="C语言实验——余弦">SDUT 1194</a></td>
+								<td class="success">2015-10-16 23:37:13</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1195" target="_blank" title="C语言实验——打印金字塔">SDUT 1195</a></td>
+								<td class="success">2015-10-16 23:49:26</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2249" target="_blank" title="做乘法">SDUT 2249</a></td>
+								<td class="success">2015-10-16 23:53:10</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2552" target="_blank" title="猜糖块">SDUT 2552</a></td>
+								<td class="success">2015-10-17 00:01:52</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2553" target="_blank" title="完美的素数">SDUT 2553</a></td>
+								<td class="success">2015-10-17 00:21:42</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2561" target="_blank" title="九九乘法表">SDUT 2561</a></td>
+								<td class="success">2015-10-17 00:30:56</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2749" target="_blank" title="区域内点的个数">SDUT 2749</a></td>
+								<td class="success">2015-10-17 00:53:28</td>
+							</tr>
+							<tr>
+								<td rowspan="15">Function</td>
+								<td rowspan="5">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1199" target="_blank" title="C语言实验——计算表达式">SDUT 1199</a></td>
+								<td class="success">2015-10-18 19:36:00</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1238" target="_blank" title="求数列的和">SDUT 1238</a></td>
+								<td class="success">2015-10-18 20:01:37</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1136" target="_blank" title="C/C++程序训练6---歌德巴赫猜想的证明">SDUT 1136</a></td>
+								<td class="success">2015-10-18 20:35:54</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1123" target="_blank" title="C语言实验——求阶乘（循环结构）">SDUT 1123</a></td>
+								<td class="success">2015-10-16 22:52:04</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1200" target="_blank" title="汉诺塔">SDUT 1200</a></td>
+								<td class="success">2015-10-19 15:00:32</td>
+							</tr>
+							<tr>
+								<td rowspan="10">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1161" target="_blank" title="C语言实验——一元二次方程Ⅰ">SDUT 1161</a></td>
+								<td class="success">2015-10-10 12:54:42</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1206" target="_blank" title="求三角形面积">SDUT 1206</a></td>
+								<td class="success">2015-10-18 20:15:36</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1209" target="_blank" title="求实数绝对值">SDUT 1209</a></td>
+								<td class="success">2015-10-08 14:44:44</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2557" target="_blank" title="分段函数">SDUT 2557</a></td>
+								<td class="success">2015-10-18 21:21:08</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1132" target="_blank" title="C/C++经典程序训练2---斐波那契数列">SDUT 1132</a></td>
+								<td class="success">2015-10-16 22:50:07</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1149" target="_blank" title="计算题">SDUT 1149</a></td>
+								<td class="success">2015-10-19 15:35:41</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1689" target="_blank" title="斐波那契？">SDUT 1689</a></td>
+								<td class="success">2015-10-19 15:50:38</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1163" target="_blank" title="C语言实验——排列">SDUT 1163</a></td>
+								<td class="success">2015-10-24 13:13:48</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1184" target="_blank" title="C语言实验——拍皮球">SDUT 1184</a></td>
+								<td class="success">2015-10-24 16:48:11</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2400" target="_blank" title="高中数学？">SDUT 2400</a></td>
+								<td class="success">2015-10-24 16:46:21</td>
+							</tr>
+							<tr>
+								<td rowspan="20">One-Dimensional Array</td>
+								<td rowspan="6">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1170" target="_blank" title="C语言实验——最值">SDUT 1170</a></td>
+								<td class="success">2015-10-25 17:41:34</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1175" target="_blank" title="C语言实验——分割整数">SDUT 1175</a></td>
+								<td class="success">2015-10-25 17:42:30</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1186" target="_blank" title="C语言实验——数组逆序">SDUT 1186</a></td>
+								<td class="success">2015-10-25 17:42:44</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1582" target="_blank" title="排序">SDUT 1582</a></td>
+								<td class="success">2015-10-25 23:21:23</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1244" target="_blank" title="数列有序!">SDUT 1244</a></td>
+								<td class="success">2015-10-25 23:37:09</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1523" target="_blank" title="矩阵输出">SDUT 1523</a></td>
+								<td class="success">2015-10-25 23:53:19</td>
+							</tr>
+							<tr>
+								<td rowspan="14">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1178" target="_blank" title="C语言实验——数组逆序">SDUT 1178</a></td>
+								<td class="success">2015-10-25 22:55:29</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1191" target="_blank" title="C语言实验——整数位">SDUT 1191</a></td>
+								<td class="success">2015-10-25 23:01:38</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1188" target="_blank" title="C语言实验——各位数字之和排序">SDUT 1188</a></td>
+								<td class="success">2015-10-26 08:30:05</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1196" target="_blank" title="排序问题">SDUT 1196</a></td>
+								<td class="success">2015-10-26 09:41:31</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2105" target="_blank" title="小泉的难题">SDUT 2105</a></td>
+								<td class="success">2015-10-26 09:49:16</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2255" target="_blank" title="期末考试之排名次">SDUT 2255</a></td>
+								<td class="success">2015-10-26 10:14:46</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1182" target="_blank" title="C语言实验——数日子">SDUT 1182</a></td>
+								<td class="success">2015-10-26 10:39:54</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2736" target="_blank" title="小鑫の日常系列故事（五）——卡片游戏">SDUT 2736</a></td>
+								<td class="success">2015-10-26 15:40:21</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2737" target="_blank" title="小鑫の日常系列故事（六）——奇遇记">SDUT 2737</a></td>
+								<td class="success">2015-10-26 17:43:54</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2748" target="_blank" title="第X大的数">SDUT 2748</a></td>
+								<td class="success">2015-10-27 22:59:15</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2554" target="_blank" title="冒泡排序中数据交换的次数">SDUT 2554</a></td>
+								<td class="success">2015-10-28 00:13:10</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2565" target="_blank" title="区间之和">SDUT 2565</a></td>
+								<td class="success">2015-10-28 08:27:05</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/3103" target="_blank" title="小鑫爱运动">SDUT 3103</a></td>
+								<td class="success">2015-10-28 16:00:53</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/3106" target="_blank" title="小鑫数数儿">SDUT 3106</a></td>
+								<td class="success">2015-10-28 16:31:19</td>
+							</tr>
+							<tr>
+								<td rowspan="10">Two-Dimensional Array</td>
+								<td rowspan="4">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1164" target="_blank" title="C语言实验——矩阵转置">SDUT 1164</a></td>
+								<td class="success">2015-11-12 22:35:19</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1198" target="_blank" title="鞍点计算">SDUT 1198</a></td>
+								<td class="success">2015-10-10 13:39:06</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1216" target="_blank" title="杨辉三角">SDUT 1216</a></td>
+								<td class="success">2015-10-10 13:39:34</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1572" target="_blank" title="矩阵的舞蹈">SDUT 1572</a></td>
+								<td class="success">2015-10-10 13:40:15</td>
+							</tr>
+							<tr>
+								<td rowspan="6">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1172" target="_blank" title="C语言实验——矩阵下三角元素之和">SDUT 1172</a></td>
+								<td class="success">2015-10-10 12:57:30</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1522" target="_blank" title="对称矩阵的判定">SDUT 1522</a></td>
+								<td class="success">2015-10-10 13:39:52</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1185" target="_blank" title="C语言实验——求一个3*3矩阵对角线元素之和">SDUT 1185</a></td>
+								<td class="success">2015-10-10 13:40:36</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2254" target="_blank" title="字母旋转方阵">SDUT 2254</a></td>
+								<td class="success">2015-10-10 23:34:32</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2559" target="_blank" title="矩阵的旋转">SDUT 2559</a></td>
+								<td class="success">2015-10-11 08:27:32</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2744" target="_blank" title="矩阵">SDUT 2744</a></td>
+								<td class="success">2015-10-12 12:51:04</td>
+							</tr>
+							<tr>
+								<td rowspan="25">Char Array</td>
+								<td rowspan="9">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1162" target="_blank" title="C语言实验——保留字母">SDUT 1162</a></td>
+								<td class="success">2015-10-29 07:23:47</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1171" target="_blank" title="C语言实验——保留整数">SDUT 1171</a></td>
+								<td class="success">2015-10-29 09:01:37</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1180" target="_blank" title="C语言实验——单词统计">SDUT 1180</a></td>
+								<td class="success">2015-10-29 07:25:00</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1191" target="_blank" title="C语言实验——整数位">SDUT 1191</a></td>
+								<td class="success">2015-10-25 23:01:38</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1173" target="_blank" title="字符逆序">SDUT 1173</a></td>
+								<td class="success">2015-10-29 21:05:26</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1187" target="_blank" title="简单编码">SDUT 1187</a></td>
+								<td class="success">2015-10-29 21:26:19</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1205" target="_blank" title="C语言实验——合法的C标识符">SDUT 1205</a></td>
+								<td class="success">2015-10-30 16:59:14</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1250" target="_blank" title="统计元音">SDUT 1250</a></td>
+								<td class="success">2015-10-30 19:10:04</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1524" target="_blank" title="回文串判定">SDUT 1524</a></td>
+								<td class="success">2015-10-30 19:27:22</td>
+							</tr>
+							<tr>
+								<td rowspan="16">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1168" target="_blank" title="C语言实验——大小写转换">SDUT 1168</a></td>
+								<td class="success">2015-10-29 09:14:18</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1176" target="_blank" title="C语言实验——删除指定字符">SDUT 1176</a></td>
+								<td class="success">2015-10-29 09:29:18</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1219" target="_blank" title="字符统计1">SDUT 1219</a></td>
+								<td class="success">2015-10-29 13:18:28</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1525" target="_blank" title="字符统计2">SDUT 1525</a></td>
+								<td class="success">2015-10-29 20:03:18</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1204" target="_blank" title="C语言实验——字符编码">SDUT 1204</a></td>
+								<td class="success">2015-10-30 16:25:24</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1210" target="_blank" title="简单密码破解">SDUT 1210</a></td>
+								<td class="success">2015-10-30 16:43:09</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1246" target="_blank" title="C语言合法标识符">SDUT 1246</a></td>
+								<td class="success">2015-10-30 20:50:39</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1333" target="_blank" title="简单字符串比较">SDUT 1333</a></td>
+								<td class="success">2015-10-30 21:36:03</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1201" target="_blank" title="字符串排序">SDUT 1201</a></td>
+								<td class="success">2015-10-30 23:01:19</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1334" target="_blank" title="简单字符串排序">SDUT 1334</a></td>
+								<td class="success">2015-10-30 23:38:36</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2556" target="_blank" title="传说中的数据结构">SDUT 2556</a></td>
+								<td class="success">2015-10-31 08:30:10</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2560" target="_blank" title="又见回文">SDUT 2560</a></td>
+								<td class="success">2015-10-30 20:38:16</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2733" target="_blank" title="小鑫の日常系列故事（二）——石头剪子布">SDUT 2733</a></td>
+								<td class="success">2015-10-31 08:55:23</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2741" target="_blank" title="小鑫の日常系列故事（十）——排名次">SDUT 2741</a></td>
+								<td class="success">2015-10-31 17:02:37</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2746" target="_blank" title="大小写转换">SDUT 2746</a></td>
+								<td class="success">2015-10-31 17:07:03</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2761" target="_blank" title="编码">SDUT 2761</a></td>
+								<td class="success">2015-10-31 17:59:43</td>
+							</tr>
+							<tr>
+								<td rowspan="6">Pointer</td>
+								<td rowspan="4">Basic</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1115" target="_blank" title="C语言实验——交换两个整数的值（顺序结构）">SDUT 1115</a></td>
+								<td class="success">2015-09-30 10:12:55</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1162" target="_blank" title="C语言实验——保留字母">SDUT 1162</a></td>
+								<td class="success">2015-10-29 07:23:47</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1178" target="_blank" title="C语言实验——数组逆序">SDUT 1178</a></td>
+								<td class="success">2015-10-25 22:55:29</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1196" target="_blank" title="排序问题">SDUT 1196</a></td>
+								<td class="success">2015-10-26 09:41:31</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Advanced</td>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/1176" target="_blank" title="C语言实验——删除指定字符">SDUT 1176</a></td>
+								<td class="success">2015-10-29 09:29:18</td>
+							</tr>
+							<tr>
+								<td><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemdetail/pid/2560" target="_blank" title="又见回文">SDUT 2560</a></td>
+								<td class="success">2015-10-30 20:38:16</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- Tab 2 -->
+				<div role="tabpanel" class="tab-pane fade in active" id="poj-1" aria-labelledBy="poj-1-tab">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th style="width: 20%;">Stage</th>
+								<th style="width: 40%;">Section</th>
+								<th style="width: 15%;">Problem</th>
+								<th style="width: 25%;">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="13">Basic Algorithms</td>
+								<td rowspan="2">Enumeration</td>
+								<td><a href="http://poj.org/problem?id=1753" target="_blank" title="Flip Game">POJ 1753</a></td>
+								<td class="success">2016-07-05 11:44:38</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2965" target="_blank" title="The Pilots Brothers' refrigerator">POJ 2965</a></td>
+								<td class="success">2016-07-05 12:15:01</td>
+							</tr>
+							<tr>
+								<td rowspan="3">Greedy</td>
+								<td><a href="http://poj.org/problem?id=1328" target="_blank" title="Radar Installation">POJ 1328</a></td>
+								<td class="success">2016-07-12 11:51:29</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2109" target="_blank" title="Power of Cryptography">POJ 2109</a></td>
+								<td class="success">2016-07-07 12:31:14</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2586" target="_blank" title="Y2K Accounting Bug">POJ 2586</a></td>
+								<td class="success">2016-07-07 16:00:33</td>
+							</tr>
+							<tr>
+								<td rowspan="1">Divide and Conquer</td>
+								<td><a href="http://poj.org/problem?id=2524" target="_blank" title="Ubiquitous Religions">POJ 2524</a></td>
+								<td class="success">2016-07-07 22:44:54</td>
+							</tr>
+							<tr>
+								<td rowspan="1">Recursion</td>
+								<td><a href="http://poj.org/problem?id=2506" target="_blank" title="Tiling">POJ 2506</a></td>
+								<td class="success">2016-07-08 21:36:06</td>
+							</tr>
+							<tr>
+								<td rowspan="1">Constructive Algorithms</td>
+								<td><a href="http://poj.org/problem?id=3295" target="_blank" title="Tautology">POJ 3295</a></td>
+								<td class="success">2016-07-08 21:41:53</td>
+							</tr>
+							<tr>
+								<td rowspan="5">Simulation</td>
+								<td><a href="http://poj.org/problem?id=1068" target="_blank" title="Parencodings">POJ 1068</a></td>
+								<td class="success">2016-07-05 16:11:31</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2632" target="_blank" title="Crashing Robots">POJ 2632</a></td>
+								<td class="success">2016-07-09 18:43:20</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1573" target="_blank" title="Robot Motion">POJ 1573</a></td>
+								<td class="success">2016-07-09 18:45:16</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2993" target="_blank" title="Emag eht htiw Em Pleh">POJ 2993</a></td>
+								<td class="success">2016-07-09 18:46:13</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2996" target="_blank" title="Help Me with the Game">POJ 2996</a></td>
+								<td class="success">2016-07-09 18:46:37</td>
+							</tr>
+							<tr>
+								<td rowspan="20">Graph Algorithms</td>
+								<td rowspan="3">DFS and BFS</td>
+								<td><a href="http://poj.org/problem?id=3278" target="_blank" title="Catch That Cow">POJ 3278</a></td>
+								<td class="success">2016-07-10 11:44:03</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2049" target="_blank" title="Finding Nemo">POJ 2049</a></td>
+								<td class="success">2016-07-10 11:48:10</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3083" target="_blank" title="Children of the Candy Corn">POJ 3083</a></td>
+								<td class="success">2016-07-10 11:49:50</td>
+							</tr>
+							<tr>
+								<td rowspan="6">Shortest Path Algorithms</td>
+								<td><a href="http://poj.org/problem?id=1860" target="_blank" title="Currency Exchange">POJ 1860</a></td>
+								<td class="success">2016-07-11 09:07:36</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3259" target="_blank" title="Wormholes">POJ 3259</a></td>
+								<td class="success">2016-07-11 15:48:06</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1062" target="_blank" title="昂贵的聘礼">POJ 1062</a></td>
+								<td class="success">2016-07-11 16:28:44</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2253" target="_blank" title="Frogger">POJ 2253</a></td>
+								<td class="success">2016-07-12 00:43:26</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1125" target="_blank" title="Stockbroker Grapevine">POJ 1125</a></td>
+								<td class="success">2016-07-12 08:44:21</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2240" target="_blank" title="Arbitrage">POJ 2240</a></td>
+								<td class="success">2016-07-12 11:46:16</td>
+							</tr>
+							<tr>
+								<td rowspan="4">Minimum Spanning Tree</td>
+								<td><a href="http://poj.org/problem?id=1789" target="_blank" title="Truck History">POJ 1789</a></td>
+								<td class="success">2016-07-13 08:53:59</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2485" target="_blank" title="Highways">POJ 2485</a></td>
+								<td class="success">2016-07-16 23:32:41</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1258" target="_blank" title="Agri-Net">POJ 1258</a></td>
+								<td class="success">2016-07-16 23:39:16</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3026" target="_blank" title="Borg Maze">POJ 3026</a></td>
+								<td class="success">2016-08-02 20:05:47</td>
+							</tr>
+							<tr>
+								<td rowspan="3">Topological Sorting</td>
+								<td><a href="http://poj.org/problem?id=1094" target="_blank" title="Sorting It All Out">POJ 1094</a></td>
+								<td class="success">2016-07-29 10:16:27</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3267" target="_blank" title="The Cow Lexicon">POJ 3267</a></td>
+								<td class="success">2016-08-02 21:02:48</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3687" target="_blank" title="Labeling Balls">POJ 3687</a></td>
+								<td class="success">2016-08-04 17:10:53</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Bipartite Graph</td>
+								<td><a href="http://poj.org/problem?id=3041" target="_blank" title="Asteroids">POJ 3041</a></td>
+								<td class="success">2016-08-05 15:30:29</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3020" target="_blank" title="Antenna Placement">POJ 3020</a></td>
+								<td class="success">2016-08-05 15:48:23</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Maximum Flow</td>
+								<td><a href="http://poj.org/problem?id=1459" target="_blank" title="Power Network">POJ 1459</a></td>
+								<td class="success">2016-08-22 21:55:23</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3436" target="_blank" title="ACM Computer Factory">POJ 3436</a></td>
+								<td class="success">2016-08-23 11:12:07</td>
+							</tr>
+							<tr>
+								<td rowspan="17">Data Structure</td>
+								<td rowspan="3">String</td>
+								<td><a href="http://poj.org/problem?id=1035" target="_blank" title="Spell checker">POJ 1035</a></td>
+								<td class="success">2016-07-25 16:11:08</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3080" target="_blank" title="Blue Jeans">POJ 3080</a></td>
+								<td class="success">2016-07-31 17:39:57</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1936" target="_blank" title="All in All">POJ 1936</a></td>
+								<td class="success">2016-07-27 21:58:18</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Sorting Algorithms</td>
+								<td><a href="http://poj.org/problem?id=2388" target="_blank" title="Who's in the Middle">POJ 2388</a></td>
+								<td class="success">2016-07-22 08:36:31</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2299" target="_blank" title="Ultra-QuickSort">POJ 2299</a></td>
+								<td class="success">2016-07-26 21:57:39</td>
+							</tr>
+							<tr>
+								<td rowspan="1">Union-Find</td>
+								<td><a href="http://poj.org/problem?id=1611" target="_blank" title="The Suspects">POJ 1611</a></td>
+								<td class="success">2016-07-22 08:56:19</td>
+							</tr>
+							<tr>
+								<td rowspan="6">Hashing and Binary Search</td>
+								<td><a href="http://poj.org/problem?id=3349" target="_blank" title="Snowflake
+							Snow
+							Snowflakes">POJ 3349</a></td>
+								<td class="success">2016-08-04 17:43:37</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3274" target="_blank" title="Gold Balanced Lineup">POJ 3274</a></td>
+								<td class="success">2016-08-06 15:52:32</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2151" target="_blank" title="Check the difficulty of problems">POJ 2151</a></td>
+								<td class="success">2016-08-09 11:06:17</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1840" target="_blank" title="Eqs">POJ 1840</a></td>
+								<td class="success">2016-08-07 01:56:51</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2002" target="_blank" title="Squares">POJ 2002</a></td>
+								<td class="success">2016-08-07 11:33:06</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2503" target="_blank" title="Babelfish">POJ 2503</a></td>
+								<td class="success">2016-07-26 23:14:07</td>
+							</tr>
+							<tr>
+								<td rowspan="1">Huffman Tree</td>
+								<td><a href="http://poj.org/problem?id=3253" target="_blank" title="Fence Repair">POJ 3253</a></td>
+								<td class="success">2016-07-18 18:21:03</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Heap and Priority Queue</td>
+								<td><a href="http://poj.org/problem?id=2442" target="_blank" title="Sequence">POJ 2442</a></td>
+								<td class="success">2016-07-25 18:37:16</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1442" target="_blank" title="Black Box">POJ 1442</a></td>
+								<td class="success">2016-07-19 16:21:50</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Trie</td>
+								<td><a href="http://poj.org/problem?id=2513" target="_blank" title="Colored Sticks">POJ 2513</a></td>
+								<td class="success">2016-07-07 12:15:12</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2418" target="_blank" title="Hardwood Species">POJ 2418</a></td>
+								<td class="success">2016-07-20 01:51:39</td>
+							</tr>
+							<tr>
+								<td rowspan="14">Primary Search</td>
+								<td rowspan="5">DFS</td>
+								<td><a href="http://poj.org/problem?id=2488" target="_blank" title="A Knight's Journey">POJ 2488</a></td>
+								<td class="success">2016-07-28 22:05:17</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3083" target="_blank" title="Children of the Candy Corn">POJ 3083</a></td>
+								<td class="success">2016-07-10 11:49:50</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3009" target="_blank" title="Curling 2.0">POJ 3009</a></td>
+								<td class="success">2016-08-07 14:34:48</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1321" target="_blank" title="棋盘问题">POJ 1321</a></td>
+								<td class="success">2016-07-22 08:54:12</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2251" target="_blank" title="Dungeon Master">POJ 2251</a></td>
+								<td class="success">2016-07-18 18:26:02</td>
+							</tr>
+							<tr>
+								<td rowspan="5">BFS</td>
+								<td><a href="http://poj.org/problem?id=3278" target="_blank" title="Catch That Cow">POJ 3278</a></td>
+								<td class="success">2016-07-10 11:44:03</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1426" target="_blank" title="Find The Multiple">POJ 1426</a></td>
+								<td class="success">2016-08-11 16:43:56</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3126" target="_blank" title="Prime Path">POJ 3126</a></td>
+								<td class="success">2016-07-27 05:15:13</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3087" target="_blank" title="Shuffle'm Up">POJ 3087</a></td>
+								<td class="success">2016-08-12 00:04:36</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3414" target="_blank" title="Pots">POJ 3414</a></td>
+								<td class="success">2016-07-22 17:38:28</td>
+							</tr>
+							<tr>
+								<td rowspan="4">Search and Pruning</td>
+								<td><a href="http://poj.org/problem?id=2531" target="_blank" title="Network Saboteur">POJ 2531</a></td>
+								<td class="success">2016-08-13 06:10:39</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1416" target="_blank" title="Shredding Company">POJ 1416</a></td>
+								<td class="success">2016-08-13 16:16:58</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2676" target="_blank" title="Sudoku">POJ 2676</a></td>
+								<td class="success">2016-08-13 11:12:43</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1129" target="_blank" title="Channel Allocation">POJ 1129</a></td>
+								<td class="success">2016-08-08 07:23:23</td>
+							</tr>
+							<tr>
+								<td rowspan="9">DP</td>
+								<td rowspan="2">Knapsack Problem</td>
+								<td><a href="http://poj.org/problem?id=1837" target="_blank" title="Balance">POJ 1837</a></td>
+								<td class="success">2016-08-03 09:49:06</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1276" target="_blank" title="Cash Machine">POJ 1276</a></td>
+								<td class="success">2016-08-05 21:44:04</td>
+							</tr>
+							<tr>
+								<td rowspan="7">Primary DP</td>
+								<td><a href="http://poj.org/problem?id=3267" target="_blank" title="The Cow Lexicon">POJ 3267</a></td>
+								<td class="success">2016-08-02 21:02:48</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1836" target="_blank" title="Alignment">POJ 1836</a></td>
+								<td class="success">2016-08-15 15:59:35</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1260" target="_blank" title="Pearls">POJ 1260</a></td>
+								<td class="success">2016-08-16 10:57:52</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2533" target="_blank" title="Longest Ordered Subsequence">POJ 2533</a></td>
+								<td class="success">2016-07-27 21:57:05</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3176" target="_blank" title="Cow Bowling">POJ 3176</a></td>
+								<td class="success">2016-07-26 23:22:00</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1080" target="_blank" title="Human Gene Functions">POJ 1080</a></td>
+								<td class="success">2016-08-17 14:36:42</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1159" target="_blank" title="Palindrome">POJ 1159</a></td>
+								<td class="success">2016-07-22 09:07:01</td>
+							</tr>
+							<tr>
+								<td rowspan="12">Mathematics</td>
+								<td rowspan="4">Combinatorics</td>
+								<td><a href="http://poj.org/problem?id=3252" target="_blank" title="Round Numbers">POJ 3252</a></td>
+								<td class="success">2016-08-17 22:03:22</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1850" target="_blank" title="Code">POJ 1850</a></td>
+								<td class="success">2016-08-19 13:28:02</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1019" target="_blank" title="Number Sequence">POJ 1019</a></td>
+								<td class="success">2016-08-19 07:12:36</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1942" target="_blank" title="Paths on a Grid">POJ 1942</a></td>
+								<td class="success">2016-07-27 21:55:59</td>
+							</tr>
+							<tr>
+								<td rowspan="4">Number Theory</td>
+								<td><a href="http://poj.org/problem?id=2635" target="_blank" title="The Embarrassed Cryptographer">POJ 2635</a></td>
+								<td class="success">2016-08-19 15:48:42</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3292" target="_blank" title="Semi-prime H-numbers">POJ 3292</a></td>
+								<td class="success">2016-07-20 01:53:40</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1845" target="_blank" title="Sumdiv">POJ 1845</a></td>
+								<td class="success">2016-08-18 21:29:58</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=2115" target="_blank" title="C Looooops">POJ 2115</a></td>
+								<td class="success">2016-08-19 21:54:51</td>
+							</tr>
+							<tr>
+								<td rowspan="4">Numeration</td>
+								<td><a href="http://poj.org/problem?id=3273" target="_blank" title="Monthly Expense">POJ 3273</a></td>
+								<td class="success">2016-07-22 09:03:08</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3258" target="_blank" title="River Hopscotch">POJ 3258</a></td>
+								<td class="success">2016-08-09 00:43:08</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1905" target="_blank" title="Expanding Rods">POJ 1905</a></td>
+								<td class="success">2016-08-09 23:30:53</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=3122" target="_blank" title="Pie">POJ 3122</a></td>
+								<td class="success">2016-08-10 00:23:23</td>
+							</tr>
+							<tr>
+								<td rowspan="7">Computational Geometry</td>
+								<td rowspan="1">Geometry Formulas</td>
+								<td><a href="http://poj.org/problem?id=1265" target="_blank" title="Area">POJ 1265</a></td>
+								<td class="success">2016-08-20 13:11:50</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Cross Product and Dot Product</td>
+								<td><a href="http://poj.org/problem?id=2031" target="_blank" title="Building a Space Station">POJ 2031</a></td>
+								<td class="success">2016-07-28 21:53:53</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1039" target="_blank" title="Pipe">POJ 1039</a></td>
+								<td class="success">2016-08-21 00:59:53</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Simple Polygon</td>
+								<td><a href="http://poj.org/problem?id=1408" target="_blank" title="Fishnet">POJ 1408</a></td>
+								<td class="success">2016-08-21 02:03:15</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1584" target="_blank" title="A Round Peg in a Ground Hole">POJ 1584</a></td>
+								<td class="success">2016-08-21 22:34:19</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Convex Hull</td>
+								<td><a href="http://poj.org/problem?id=2187" target="_blank" title="Beauty Contest">POJ 2187</a></td>
+								<td class="success">2016-08-22 18:32:27</td>
+							</tr>
+							<tr>
+								<td><a href="http://poj.org/problem?id=1113" target="_blank" title="Wall">POJ 1113</a></td>
+								<td class="success">2016-08-22 17:29:33</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+// Initialization
+$(function() {
+	// Add title
+	$(".table tr").each(function() {
+		$(this).children("td").each(function(idx, e) {
+			if(idx < 2) $(e).attr("title", $(e).text());
+		});
+	});
+	// expanda
+	$(".table a").parent("td").expanda();
+	// tooltip
+	$(".table a").attr({"data-toggle": "tooltip", "data-placement": "right"});
+	$("[data-toggle='tooltip']").click(function() {
+		$(this).blur();
+	});
+});
+// Enable tooltip
+$(function() { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+</body>
+</html>
