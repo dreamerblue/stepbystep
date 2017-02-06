@@ -12,6 +12,10 @@ StepByStep is a training plan system for OI/ACM. It was used in [SDUT](http://ac
 
 This project includes StepByStep's front-end part.
 
+## Screenshot
+
+![Screenshot-step](https://raw.githubusercontent.com/dreamerblue/stepbystep/master/Screenshot-step.png)
+
 ## Dependencies
 
 - [Bootstrap](http://getbootstrap.com)
