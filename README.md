@@ -20,7 +20,7 @@ This project includes StepByStep's front-end part.
 - [Respond.js](https://github.com/scottjehl/Respond)
 - [jquery-placeholder](https://github.com/mathiasbynens/jquery-placeholder)
 - [jQuery.dotdotdot](http://dotdotdot.frebsite.nl/)
-- [expanda.js](https://github.com/dreamerblue/expanda)
+- [expanda.js](https://github.com/dreamerblue/expanda.js)
 
 ## Usage
 
