@@ -14,6 +14,9 @@ StepByStep is a training plan system for OI/ACM. It was used in [SDUT](http://ac
 
 This project includes StepByStep's front-end part.
 
+**Note:**
+For Microsoft IE, only IE 8+ is supported.
+
 ## Screenshot
 
 ![Screenshot-step](https://raw.githubusercontent.com/dreamerblue/stepbystep/master/Screenshot-step.png)
